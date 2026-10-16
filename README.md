@@ -1,39 +1,36 @@
-# PhilSIEM v3 | Complete static portfolio
+# PhilSIEM v4 | LinkedIn-ready cybersecurity portfolio
 
-A standalone, GitHub Pages-compatible cybersecurity portfolio built from the supplied existing site. No build step, package manager, API key or backend required.
+A static, GitHub Pages-compatible cybersecurity portfolio built from the user-supplied PhilSIEM v3 site. Preserves the existing branding, projects, CNAME and original architecture diagram. No hosting migration or build tools needed.
 
-## Pages
-- `index.html` - updated homepage and linked project cards
-- `philsiem-v2.html` - **proposed** architecture and original image
-- `opencanary-lab.html` - practical OpenCanary project
-- `investigations.html` - case study index
-- `soc-investigation-003.html` - synthetic SSH failures
-- `soc-investigation-004.html` - synthetic outbound connections
-- `soc-investigation-005.html` - synthetic phishing triage
-- `soc-lab.html` - offline interactive triage with local TXT report export
-- `about.html`, `privacy.html`, `404.html`
-- `assets/` - CSS, JS, favicon, original architecture PNG
-- `CNAME`, `robots.txt`, `sitemap.xml`
+## Features
+- Homepage, About, Skills, OpenCanary practical lab, proposed architecture, three documented synthetic SOC case studies.
+- Seven browser-based **fictional** SOC training scenarios: SSH failures, successful SSH session after failures, authorised test, phishing, outbound anomaly, privilege escalation, unusual DNS.
+- Evidence table, classification, severity, confidence, free-text analysis, educational 100-point rubric and coaching.
+- Local TXT and JSON investigation exports.
+- Optional browser-local history with clear/delete control. Storage is localStorage, not a server or cloud service.
+- Dedicated `portfolio.html` page for public-sharing checks and LinkedIn description.
+- Responsive styling, accessible form labels, metadata, sitemap, privacy disclosure, custom 404 page.
 
-## Deploy to the EXISTING GitHub Pages site
-1. Keep a copy of your existing repository ZIP as backup.
-2. Unzip this package. Open the inner `PhilSIEM_v3_Complete_Website` folder.
-3. In your GitHub `philSIEM-website` repository on `main`, select **Add file → Upload files**.
-4. Upload **the files and `assets` folder inside this folder**, not the enclosing folder or ZIP itself. GitHub must show `index.html` at the repository root.
-5. Let GitHub replace files with matching names, and commit to `main`.
-6. Wait for **Actions → pages build and deployment** to show a green check.
-7. Check `https://philsiem.com`, `https://philsiem.com/soc-lab.html`, and the case-study links.
+## Deploy to the EXISTING philsiem.com GitHub Pages site
+1. Download a backup ZIP of the current GitHub repository first.
+2. Unzip the v4 archive, open the extracted folder, and upload **all files and the assets folder inside it** to the ROOT of the existing `philSIEM-website` repository (main branch). Do not upload the enclosing folder or ZIP.
+3. GitHub replaces files with matching names. Commit changes. Keep `CNAME` (philsiem.com).
+4. Wait for the GitHub Pages Actions deployment to finish, then force-refresh Safari.
+5. Test: `https://philsiem.com`, `/soc-lab.html`, `/portfolio.html`, `/philsiem-v2.html` and the OpenCanary/case-study links.
+6. On the SOC lab, test scenario selection, feedback, TXT/JSON downloads, optional save and clear-history functions. Test on phone and desktop.
 
-**Preserve the `CNAME` file.** This package contains the original `philsiem.com` CNAME. Do not change Namecheap DNS, GitHub Pages settings or HTTPS.
+## Integrity / professional claims
+- PhilSIEM v2 is a **proposed architecture**, not a deployed Security Onion stack.
+- All SOC investigation scenarios and dashboard values are **simulated**, not live alerts or real incidents.
+- The scoring is a transparent educational heuristic, not AI grading, an accredited exam or professional certification.
+- No live honeypot connections, credentials, personal information or backend services are included.
+- Review and approve all claims, project details, GitHub/contact links and any certificates before using for applications.
+- No automated testing of the actual public deployment has been performed by this package. Browser verification is required after upload.
 
-## Test offline
-Double-click `index.html` to preview static pages, or run `python3 -m http.server 8768` from the extracted folder and visit `http://127.0.0.1:8768`. The SOC lab works without internet. The GitHub external link requires internet.
+## Local preview
+Open `index.html` or serve the folder using `python3 -m http.server 8768`. The training scenarios are embedded in JS, so they work without a server. Optional browser history requires storage permissions.
 
-## Security and accuracy
-- Proposed Security Onion/Cowrie/Zeek/Suricata architecture is **not deployed**.
-- SOC investigations are synthetic, not real breaches.
-- The homepage dashboard is demonstration data, not a live SIEM.
-- No private IPs, tokens or real logs are intentionally included.
-- No analytics, tracking scripts, external fonts or external JavaScript libraries.
-- The SOC report is generated locally in the browser and is not transmitted.
-- Review all public claims and evidence before using this portfolio for job applications.
+## Suggested LinkedIn Featured item
+Title: **PhilSIEM | Cybersecurity Projects & SOC Training Portfolio**
+URL: https://philsiem.com
+Description: An independent cybersecurity learning portfolio featuring OpenCanary honeypot lab work, a proposed security monitoring architecture, documented simulated SOC investigations and an interactive analyst training lab.

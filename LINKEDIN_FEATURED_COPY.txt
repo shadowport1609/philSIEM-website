@@ -1,0 +1,11 @@
+LINKEDIN FEATURED LINK
+Title: PhilSIEM | Cybersecurity Projects & SOC Training Portfolio
+URL: https://philsiem.com
+Description: My independent cybersecurity learning portfolio. Explore hands-on OpenCanary honeypot lab documentation, a proposed security monitoring architecture, simulated SOC investigations and a browser-based analyst training lab. I document what I built, what I learned and what I would investigate next.
+
+OPTIONAL POST
+I've been building PhilSIEM, my cybersecurity portfolio, to put practical learning into something employers can explore. It includes my OpenCanary honeypot lab, a proposed security monitoring architecture, fictional SOC investigation case studies and an interactive training lab where visitors can review synthetic evidence and export a case report. The lab is a simulation, not a live SIEM.
+
+Explore it here: https://philsiem.com
+
+#CyberSecurity #SOCAnalyst #BlueTeam #Linux #CyberSecurityLearning
